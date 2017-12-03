@@ -10,8 +10,23 @@ Setup
 =====
 
 
-1. Clone the repo
------------------
+0. Install VIM (Linux) and Vundle
+---------------------------------
+
+```bash
+$ sudo apt-get remove vim-tiny
+$ sudo apt-get update
+$ sudo apt-get install vim
+```
+
+Currently the extension manager I use is [Vundle](https://github.com/VundleVim/Vundle.vim)
+```bash
+$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+
+1. Clone this repo
+------------------
 
 ```bash
 $ git clone https://github.com/warrenmo/vimrc.git
