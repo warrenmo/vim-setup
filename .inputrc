@@ -1,0 +1,30 @@
+# Use vi style editing in shell
+set editing-mode vi
+
+# Show all tab completion options as soon as I press tab
+set show-all-if-ambiguous on
+
+# Enable menu-complete
+menu-complete-display-prefix on
+
+# (Bash 4.3) Indicate whether we're in command or insert mode
+# "+" - insert
+# ":" - command
+set show-mode-in-prompt on
+
+#######################
+# Insert mode keymaps #
+#######################
+set keymap vi-insert
+
+# Enable menu-complete
+TAB: menu-complete
+# Cycle menu-complete backwards with Shift-TAB
+"\e[Z": menu-complete-backward
+
+# Remap ESC to "jk" 
+"jk": vi-movement-mode
+
+# Retain the use of "p" character due to something about command mode
+"p": self-insert
+
