@@ -24,7 +24,6 @@ Currently the extension manager I use is [Vundle](https://github.com/VundleVim/V
 $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-
 1. Clone this repo
 ------------------
 
@@ -32,14 +31,12 @@ $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ git clone https://github.com/warrenmo/vimrc.git
 ```
 
-
 2. Copy the .vimrc file to your home directory
 ----------------------------------------------
 
 ```bash
-$ cp ./.vimrc ~/
+$ cp ./vimrc/.vimrc ~/
 ```
-
 
 3. Open any text file using VIM
 -------------------------------
@@ -48,7 +45,6 @@ $ cp ./.vimrc ~/
 $ vim any_text_file
 ```
 
-
 4. Run the Vundle plugin manager
 --------------------------------
 
@@ -56,3 +52,8 @@ $ vim any_text_file
 :PluginInstall
 ```
 
+For some reason, Zenburn doesn't get placed in the right directory, so you might need to do this:
+```bash
+$ mkdir ~/.vim/colors   # <- might not be necessary
+$ cp ~/.vim/bundle/Zenburn/colors/zenburn.vim ~/.vim/colors/
+```
