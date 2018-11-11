@@ -14,7 +14,8 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmComplete GoToDefinition ElseDeclaration<CR>
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
+let g:syntastic_python_checkers = ['pylint']
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 colors zenburn
