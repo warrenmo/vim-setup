@@ -47,7 +47,11 @@ And run the Vundle plugin manager (within VIM):
 :PluginInstall
 ```
 
-For some reason, Zenburn doesn't get placed in the right directory, so you might need to do this (after exiting VIM):
+You're done!
+
+### Troubleshooting
+
+For some reason, Zenburn sometimes doesn't get placed in the right directory, so you MIGHT need to create a colors directory and manually copy the Zenburn color file into that directory. Run this on your command line (not within VIM) to fix it:
 ```bash
 $ mkdir ~/.vim/colors   # <- might not be necessary
 $ cp ~/.vim/bundle/Zenburn/colors/zenburn.vim ~/.vim/colors/
