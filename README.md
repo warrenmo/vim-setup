@@ -10,8 +10,7 @@ Setup
 =====
 
 
-0. Install VIM (Linux) and Vundle
----------------------------------
+If you haven't already, install VIM (Linux):
 
 ```bash
 $ sudo apt-get remove vim-tiny
@@ -19,40 +18,36 @@ $ sudo apt-get update
 $ sudo apt-get install vim
 ```
 
-Currently the extension manager I use is [Vundle](https://github.com/VundleVim/Vundle.vim)
+The extension manager I currently use is [Vundle](https://github.com/VundleVim/Vundle.vim), which you can download like so:
 ```bash
 $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-1. Clone this repo
-------------------
+Next, clone this repo:
 
 ```bash
 $ git clone https://github.com/warrenmo/vimrc.git
 ```
 
-2. Copy the .vimrc file to your home directory
-----------------------------------------------
+And copy the .vimrc file to your home directory:
 
 ```bash
 $ cp ./vimrc/.vimrc ~/
 ```
 
-3. Open any text file using VIM
--------------------------------
+Now, enter VIM by opening any text file using VIM:
 
 ```bash
 $ vim any_text_file
 ```
 
-4. Run the Vundle plugin manager
---------------------------------
+And run the Vundle plugin manager (within VIM):
 
 ```
 :PluginInstall
 ```
 
-For some reason, Zenburn doesn't get placed in the right directory, so you might need to do this:
+For some reason, Zenburn doesn't get placed in the right directory, so you might need to do this (after exiting VIM):
 ```bash
 $ mkdir ~/.vim/colors   # <- might not be necessary
 $ cp ~/.vim/bundle/Zenburn/colors/zenburn.vim ~/.vim/colors/
