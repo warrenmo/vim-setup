@@ -9,14 +9,22 @@ Most if not all customizations are taken from [here](https://realpython.com/blog
 Setup
 =====
 
-Ubuntu ships with a version of Vim (vim-tiny) that only provides the Vi binary and lacks features such as syntax highlighting, so we remove vim-tiny as the default installation package by uninstalling it before installing the full-fledged Vim package. So, if you haven't already, install Vim:
+### Installing Vim
 
+If you haven't messed with your (Ubuntu) system's Vi/Vim installations, you should consider starting here.
+
+Ubuntu ships with a version of Vim (vim-tiny) that only provides the Vi binary and lacks features such as syntax highlighting. So, we remove vim-tiny as the default installation package by uninstalling it before installing the full-fledged Vim package.
 ```bash
 $ sudo apt-get remove vim-tiny
+```
+
+Now we install Vim:
+```bash
 $ sudo apt-get update
 $ sudo apt-get install vim
 ```
 
+### Installing this repo
 
 The extension manager I currently use is [Vundle](https://github.com/VundleVim/Vundle.vim), which you can download like so:
 ```bash
