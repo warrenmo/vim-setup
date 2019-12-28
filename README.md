@@ -56,8 +56,15 @@ You're done!
 
 ### Troubleshooting
 
-For some reason, Zenburn sometimes doesn't get placed in the right directory, in which case create a `colors` directory (if one doesn't exist in `~/.vim/` already) and manually copy the Zenburn color file into that directory. To fix this issue, run the following on your command line (NOT within Vim):
+For some reason, Zenburn usually doesn't get placed in the right directory, in which case create a `colors` directory (if one doesn't exist in `~/.vim/` already) and manually copy the Zenburn color file into that directory. To fix this issue, run the following on your command line (NOT within Vim):
 ```bash
 $ mkdir ~/.vim/colors   # <- this directory may already exist
 $ cp ~/.vim/bundle/Zenburn/colors/zenburn.vim ~/.vim/colors/
+```
+
+If when you run Vim, you see towards the bottom of your window "The ycmd server SHUT DOWN...", this means the plug-in YouCompleteMe has not been set up correctly during the plug-in installation step. Simply run the code below to fix it:
+```bash
+$ sudo apt install -y build-essential   # <- you may not have to run this if you have a c++ compiler ready to go
+$ cd ~/.vim/bundle/YouCompleteMe/
+$ ./install.py
 ```
